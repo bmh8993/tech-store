@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech Store: Product Detail</title>
+  </head>
+  <body>
+    <!--
+      TODO:
+      1/ Create shop.html page
+      2/ Add CSS styling
+    -->
+    <header>
+      <h1>Tech Store</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="">shop</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+      <input type="search" placeholder="search..." />
+    </header>
+    <aside>
+      <h2>Shop by:</h2>
+      <section>
+        <h3>Category</h3>
+        <hr />
+        <ul>
+          <li>All items</li>
+          <li>Cmeras</li>
+          <li>Laptops</li>
+          <li>Phones</li>
+          <li>Accessories</li>
+          <li>Other</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Price <span>($)</span></h3>
+        <hr />
+        <ul>
+          <li>1 - 9</li>
+          <li>10 - 29</li>
+          <li>30 - 59</li>
+          <li>60 - 99</li>
+          <li>100 +</li>
+        </ul>
+      </section>
+    </aside>
+    <main>
+      <h2>Contact Us:</h2>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            name="name"
+          />
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div>
+          <label for="message">Message: </label>
+          <textarea cols="30" rows="5" id="message" name="message"></textarea>
+        </div>
+        <div>
+          <label for="subject">Subject:</label>
+          <select id="subject">
+            <optgroup label="Product issue">
+              <option value="returns">Returns</option>
+              <option value="fualty_item">Fualty item</option>
+            </optgroup>
+            <optgroup label="Delivery">
+              <option value="delivery">Delivery info</option>
+              <option value="order_tracking">Tracking my order</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="advice">Advice</option>
+              <option value="other">Other</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <input type="submit" />
+          <input type="reset" />
+          <!-- <button typ="submit">Submit</button>-->
+          <!-- form tag 안에 input tag 안에 `name=value`의 방식으로 데이터가 전달된다.-->
+        </div>
+        <!--<div>
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            list="subjects"
+            id="subject"
+            placeholder="Enter your subject"
+          />
+          <datalist id="subjects">
+            <option value="returns"></option>
+            <option value="faulty item"></option>
+            <option value="delivery"></option>
+            <option value="order tracking"></option>
+            <option value="advice"></option>
+            <option value="other"></option>
+          </datalist>
+        </div>-->
+        <div>
+          <p>Subscribe to futire offers by:</p>
+          <label for="newsletter">Newsletter</label>
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="subscribe"
+            value="newsletter"
+          />
+          <label for="email">Email</label>
+          <input type="checkbox" id="email" name="subscribe" value="email" />
+          <label for="post">Post</label>
+          <input type="checkbox" id="post" name="subscribe" value="post" />
+        </div>
+
+        <div>
+          <!-- radio btn은 name으로 그룹핑을 해줘야 제대로된 라디오버튼 기능을 한다.-->
+          <p>How would you like us to response?</p>
+          <label for="phoneResponse">Phone</label>
+          <input
+            type="radio"
+            id="phoneResponse"
+            name="response"
+            value="phone"
+          />
+          <label for="emailResponse">Email</label>
+          <input
+            type="radio"
+            id="emailResponse"
+            name="response"
+            value="email"
+          />
+        </div>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJR4ITliVveTURQmG3LJD9N30&key=AIzaSyDiz5kdzX_1eLJFyoZufn0btR9dCcAj_WI"
+          allowfullscreen
+        ></iframe>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="">shop</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
