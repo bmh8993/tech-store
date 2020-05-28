@@ -1,0 +1,32 @@
+.product {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  width: 210px;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.product .product__btn {
+  padding: 10px;
+  display: inline-block;
+}
+
+.product p:first-of-type {
+  color: red;
+}
+
+.product__btn:last-of-type {
+  background-color: #0e69e9;
+  color: white;
+}
+
+main {
+  padding: 10px;
+  width: 680px;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
